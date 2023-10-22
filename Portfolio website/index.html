@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitya's Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #696969;
+            color: #000000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            background-color: #4f4f4f;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        nav ul li a:hover {
+            color: #adb5bd;
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #696969;
+            height: 1px;
+            margin: 40px 80px;
+        }
+
+        nav > div > a{
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstSection>div {
+            width: 50%;
+            margin-left: 150px;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #232323;
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: smooth;
+        }
+
+        .leftSection .btn:hover {
+            background: #000000;
+            transform: scale(1.0269);
+            transition: smooth;
+        }
+
+        .rightSection img {
+            width: 70%;
+
+        }
+
+        .purple {
+            color: #232323;
+        }
+
+        .text-gray {
+            color: #111111;
+        }
+
+        #element {
+            color: #252525;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: auto;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 2px;
+            height: 2200px;
+            margin: 56px 0;
+            display: inherit;
+        }
+
+        .secondSection .vertical {
+            height: 1px;
+            width: 93px;
+            background-color: white;
+            margin: 120px 0;
+
+        }
+
+        .image-top {
+            width: 500px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+            padding: 12px 100px;
+        }
+
+        .vertical-title {
+            position: relative;
+            width: 800px;
+            top: 25px;
+            margin-left: 90px;
+            font-size: 30px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 25px;
+            color: #343434;
+            width: 1000px;
+            font-size: 25px;
+            margin-left: 90px;
+        }
+
+        .park-proj {
+            padding: 20px;
+            background: #232323;
+            color: white;
+            border: 2px solid white;
+            border-radius: 20px;
+            cursor: pointer;
+            width: 250px;
+            margin: 40px 0 0px 90px;
+        }
+
+        .park-proj:hover {
+            transform: scale(1.0269);
+            transition: smooth;
+        }
+
+        footer {
+            background-color: #4f4f4f;
+            margin-top: 50px;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 300px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+
+        .power>img {
+            width: 200px;
+            height: 200px;
+            margin: 200px;
+
+        }
+
+        .services {
+            background-image: url(./services-bg.jpg);
+            width: 80%;
+            height: 700px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            border-radius: 50px;
+            position: relative;
+
+            /* height: 1000px;
+            width: 100%;
+            background-image: url(./Isometric\ Parking\ Lot\ Vector\ Design\ Images\,\ Flat\ Black\ And\ White\ Illustration\ Parking\ Lot\,\ Flat\,\ Vehicle\,\ Parking\ Lot\ PNG\ Image\ For\ Free\ Download.jpeg);
+            justify-content: space-between; */
+        }
+
+        .services::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 50px;
+        }
+
+        .servicesone {
+            /* width: 100%;
+            height: 700px;
+            background-size:cover; */
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            flex-direction: row;
+
+        }
+
+        .service>img {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+        }
+
+        .power {
+            display: flex;
+            justify-content: center;
+            color: #e5e5e5;
+            font-size: 1.2rem;
+        }
+
+        .footer-a {
+            text-decoration: none;
+            cursor: pointer;
+            color: #000000;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        .footer-third {
+            margin-left: 40px;
+        }
+
+        .footer-a:hover{
+            color: #adb5bd;
+            transition: smooth;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <nav>
+                <div class="left"><a href="index.html">Nitya's Portfolio</a></div>
+                <div class="right">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#foo">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, my name is <span class="purple">Nitya</span>
+                <div>and I am a</div>
+                <div id="element">Programmer</div>
+                <button class="btn">Download resume</button>
+                <button class="btn">Github</button>
+            </div>
+            <div class="rightSection">
+                <img src="./pngegg.png" alt="">
+            </div>
+        </section>
+        <hr />
+        <section class="secondSection">
+            <span class="text-gray"></span>
+            <h1>Projects and breif explanation</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top"
+                        src="./Isometric Parking Lot Vector Design Images, Flat Black And White Illustration Parking Lot, Flat, Vehicle, Parking Lot PNG Image For Free Download.jpeg"
+                        alt="">
+                    <div class="vertical-title">
+                        Parking Lot Checker (2022)
+                    </div>
+                    <div class="vertical-desc">The "Parking Lot Checker" project, implemented in C using arrays, offers
+                        a streamlined solution for managing parking spaces. It includes functions for adding and
+                        removing vehicles, as well as displaying the current parking status. This efficient system
+                        simplifies the tracking and organization of vehicles within a parking lot, all within a compact
+                        codebase.</div>
+
+                    <a href="./parkfinal.txt" target="_blank"><button class="park-proj">Click here to view project</button></a>
+
+
+                    <div class="vertical">
+                        <img class="image-top" src="./ecom.png" alt="">
+                        <div class="vertical-title">
+                            E-Commerce Website (2023)
+                        </div>
+                        <div class="vertical-desc">The E-commerce website, crafted with HTML, CSS, and JavaScript,
+                            features a dynamic front page, a user-friendly shop page with detailed product views and
+                            options, as well as sections for About, Blog, and Contact pages. This well-rounded platform
+                            seamlessly combines design and functionality, offering customers an engaging shopping
+                            experience and a wealth of information, all within an elegant and responsive web interface.
+                        </div>
+
+                        <button class="park-proj">Click here to view project</button>
+
+
+                        <div class="vertical">
+                            <img class="image-top" src="./portfweb.png" alt="">
+                            <div class="vertical-title">
+                                Portfolio Website (2023)
+                            </div>
+                            <div class="vertical-desc">A sleek portfolio website, created using HTML, CSS, and
+                                JavaScript, showcases an individual's work and skills with an interactive and
+                                user-friendly design. It effectively conveys the person's professional identity, making
+                                it easy for potential employers or clients to explore their achievements and projects.
+                            </div>
+
+                            <button class="park-proj">Click here to view project</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- <div class="power">
+        <img src="./power Chainsaw Man.jpg" alt="">
+    </div> -->
+    <div class="power">
+        <section class="services">
+
+            <h1>What I Do</h1>
+
+            <p></p>
+            <section class="servicesone">
+                <div class="service">
+                    <img src="./webdev.png" alt="" class="fser">
+                    <h1>Web Development</h1>
+                </div>
+                <div class="service">
+                    <img src="./oops1.jpg" alt="" class="fser">
+                    <h1>Object oriented Programming</h1>
+                </div>
+                <div class="service">
+                    <img src="./compprog.png" alt="" class="fser">
+                    <h1>Competitive Programming</h1>
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer" id="foo">
+            <div class="footer-first">
+                <h3>Nitya's dev portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Student</li>
+                    <li>At New Horizon College Of Engineering</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a class="footer-a" href="index.html">Home</a></li>
+                    <li><a class="footer-a" href="about.html">About</a></li>
+                    <li><a class="footer-a" href="#foo">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Social</li>
+                    <a class="footer-a" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="footer-a" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="footer-a" href=""><i class="fab fa-linkedin"></i></a>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.nityasportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Competitive programmer', 'Software Developer'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+
+</html>
